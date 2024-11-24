@@ -1,14 +1,40 @@
-/target
-/classes
-/checkouts
-profiles.clj
-pom.xml
-pom.xml.asc
+# IntelliJ IDEA project files
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Clojure build artifacts
+/target/
+/classes/
+/checkouts/
+/pom.xml
+/pom.xml.asc
 *.jar
 *.class
+
+# Leiningen-specific files
 /.lein-*
 /.nrepl-port
 /.prepl-port
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# VCS metadata
 .hgignore
 .hg/
-.idea/
+.git/
+
+# Exclude temporary or log files
+*.log
+*.tmp
+
+# Exclude test and resources files (optional)
+test-output/
+*.swp
+*.swo
+
+# Optional: Ignore generated profiles.clj (if not manually managed)
+profiles.clj
